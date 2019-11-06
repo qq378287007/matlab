@@ -1,4 +1,4 @@
-function [month,day] =daysofyear2ymd(days,year )
+function [month,day] = daysofyear2ymd(days,year)
 
 myday=[31,28,31,30,31,30,31,31,30,31,30,31];
 
@@ -12,6 +12,3 @@ while(day>myday(month))
     day=day-myday(month);
     month=month+1;   
 end
-
-end
-
